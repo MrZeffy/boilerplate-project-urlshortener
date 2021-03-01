@@ -10,7 +10,7 @@ const { Schema } = mongoose;
 let ourUrlCount = 0;
 
 // Connecting to the database
-mongoose.connect('mongodb+srv://root:Daman6232@cluster0learning.qlay7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }).then((err, data) => {
+mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true }).then((err, data) => {
   console.log('Hello');
 }).catch((err) => {
   console.log(err);
